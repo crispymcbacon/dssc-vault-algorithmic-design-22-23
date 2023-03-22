@@ -4,7 +4,7 @@ $\forall x$, if y is in left subtree $\Rightarrow  key(y)\leq key(y)$
 
 ### Deletion
 `Successor(x)` return the node $y$ s.t:
-$y=min\left\{ z\mid key(z)\geq key(x) \right\}$
+$y=min\left\lbrace z\mid key(z)\geq key(x) \right\rbrace$
 
 #### Algorithm:
 - if $x$ has a right child $\Rightarrow$ return the min of its right subtree
