@@ -44,7 +44,7 @@ They do the same comparisons but in a different order
 1. $z$ has no children $\Rightarrow$ delete $z$ and replace the pointer from `parent(z)` to $z$ with $nil$ 
 2. $z$ has one child $\Rightarrow$ replace $z$ by $z$'s child
 3. $z$ has two children $\Rightarrow$ 
-// combine with next slide
+//TODO see next slide
 
 
 

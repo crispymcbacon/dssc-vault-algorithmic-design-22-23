@@ -295,5 +295,5 @@ Divide an $n\times n$ problem into subproblems $\frac{n}{2}\times\frac{n}{2}$
 $T(n)=8T(\frac{n}{2})+\Theta(n^2)$
 ...
 
-Total=$\sum_{i=0}^{\log n}c\cdot n^2 \cdot 2^i = c\cdot n^2 \sum_{i=0}^{\log n} 2^i = c\cdot n^2 n \Rightarrow O(n^3)$ 
+Total= $\sum_{i=0}^{\log n}c\cdot n^2 \cdot 2^i = c\cdot n^2 \sum_{i=0}^{\log n} 2^i = c\cdot n^2 n \Rightarrow O(n^3)$ 
 

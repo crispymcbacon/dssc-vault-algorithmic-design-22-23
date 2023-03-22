@@ -4,7 +4,7 @@ $\forall x$, if y is in left subtree $\Rightarrow  key(y)\leq key(y)$
 
 ### Deletion
 `Successor(x)` return the node $y$ s.t:
-$y=min\left \{ z|key(z)\geq key(x) \right \}$
+$y=min\left \{ z\mid key(z)\geq key(x) \right \}$
 
 #### Algorithm:
 - if $x$ has a right child $\Rightarrow$ return the min of its right subtree
@@ -38,7 +38,7 @@ A Red-Black-Tree with $n$ nodes has a height $h \leq 2 \log(n+1)$
 - ${h}'$ = height of merged 2-3-4-Tree
 
 - The # of leaves in either tree is $n+1$ (Induction proof)
-- Max and min # of leaves in a 2-3-4-Tree of height ${h}'$ is: $2^{{h}'} \leq \# leaves \leq 4^{{h}'}$ so:
+- Max and min # of leaves in a 2-3-4-Tree of height ${h}'$ is: $2^{{h}'} \leq nr. leaves \leq 4^{{h}'}$ so:
 	- $2^{{h}'} \leq n+1 \Rightarrow {h}'\leq \log(n+1)$ 
 - The max height of a RBT is then:
 	- $h \leq 2{h}' \Rightarrow h \leq 2 \log(n+1)$
