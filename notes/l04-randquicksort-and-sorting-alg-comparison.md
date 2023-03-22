@@ -1,4 +1,4 @@
-# Randomized quicksort
+## Randomized QuickSort
 
 - **Idea:** Choose pivot randomly
 - Leads to change in **time complexity**
