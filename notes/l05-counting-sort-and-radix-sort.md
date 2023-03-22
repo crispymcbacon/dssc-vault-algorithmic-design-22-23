@@ -11,7 +11,7 @@
 //TODO add example
 
 ### Time Complexity
-if $k=O(n) \Rightarrow c.s. \Theta(n)$
+- if $k=O(n) \Rightarrow c.s. \Theta(n)$
 - **Time Complexity** $\Theta(k+n)$
 
 ### Properties
@@ -35,8 +35,8 @@ if $k=O(n) \Rightarrow c.s. \Theta(n)$
 	- This allow to preserve the number order
 
 ### Time Complexity
-$d= \log_{b}(k+1)$ 
-Time: $O(d(n+b))=O(\log_{b}(k) (n+b))=O(\log_{n}(k) (n))=O(\log_{n}(n^{\Theta(1)}) (n))=O(n)$ 
+- $d= \log_{b}(k+1)$ 
+- Time: $O(d(n+b))=O(\log_{b}(k) (n+b))=O(\log_{n}(k) (n))=O(\log_{n}(n^{\Theta(1)}) (n))=O(n)$ 
 - $\Theta(n), \forall k=O(n^{O(1)})$ 
 
 ### Properties
