@@ -72,7 +72,7 @@ del D[key] # delete
 - Reduce space waste with hashing
 
 ## Hashing
-m=$\Theta(n)$ , where n=# items$^{m-1}$ 
+m= $\Theta(n)$ , where n=# items $^{m-1}$ 
 
 $$
 \forall 
