@@ -22,7 +22,7 @@ $$
 \Theta(1+2+4+8+16+\dots \quad \cdot n) = \Theta\left( \sum_{i=1}^{\log n} 2^{i}\right)=\frac{\Theta(n)}{n}=\Theta(1)
 $$
 
-Def: operations take "$T(n)$ amortised" time if $k\geq 1$ operations take $k\cdot T(n)$ time
+Def: operations take " $T(n)$ amortised" time if $k\geq 1$ operations take $k\cdot T(n)$ time
 
 #### Deletions
 - if $m=2n \rightarrow$ shrink

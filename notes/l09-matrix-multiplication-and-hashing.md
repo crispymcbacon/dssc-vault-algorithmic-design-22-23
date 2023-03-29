@@ -1,6 +1,7 @@
 # Matrix multiplication
 
 ## Strassen
+
 $$
 \begin{align}
 P_{1}=a(f-h) \\
@@ -11,7 +12,6 @@ p_{5}(a+d)(e+h)\\
 P_{6}(b-d)(g+h)\\
 P_{7}(a-c)(e+f)\\
 \end{align}
-
 $$
 $$
 \begin{align}
@@ -21,6 +21,7 @@ t=P_{3}+P_{4}\\
 u=P_{5}+P_{1}-P_{3}-P_{7}\\
 \end{align}
 $$
+
 *1*
 $$
 a(f-)
