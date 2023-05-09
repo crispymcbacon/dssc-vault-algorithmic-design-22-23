@@ -75,7 +75,7 @@ id3((c)) --- id4((d));
 ```
 
 - $V=\left\lbrace a,b,c,d \right\rbrace$
-- $E=\left\lbrace \{a,b\},{a,c} \right\rbrace$ 
+- $E=\left\lbrace \left\lbrace a,b \right\rbrace,\left\lbrace a,c \right\rbrace, \left\lbrace b,c \right\rbrace, \left\lbrace b,a \right\rbrace, \left\lbrace c,d \right\rbrace \right\rbrace$ 
 
 ```mermaid
 ---
@@ -91,6 +91,9 @@ id2((b)) --> id1((a));
 
 id2((b)) --> id3((c));
 ```
+- $V=\left\lbrace a,b,c \right\rbrace$
+- $E=\left\lbrace (b,a), (a,c), (b,c), (c,b)\right\rbrace$ 
+
 - **Walks**: sequences of consecutive edges
 - **Paths**: walks that do not repeat any vertex
 - **Cycles**: closed walks
@@ -111,3 +114,4 @@ A[u,v]=
 \end{matrix}\right.
 $$
 [img]
+
