@@ -8,17 +8,17 @@ Suppose the last char we read from $P$ is y and it's aligned with.
 $x\not ={y}$ in $T$
 
 Preprocessing
-- $\varepsilon$ = alphabet of $T$, chars form 1  to $|\varepsilon|$
-- Compute array $R$ of size $|\varepsilon|$
+- $\varepsilon$ = alphabet of $T$, chars form 1  to $|\Sigma|$
+- Compute array $R$ of size $|\Sigma|$
 - $R[x]$ = position in P of the rightmost occurence of $x$ ($\empty$ if $x\notin P$)
 
-Time Complexity $\Theta (|R|+|\varepsilon|)$
+Time Complexity $\Theta (|R|+$|\Sigma|$)$
 
 $R[x]=i \Leftrightarrow (P[i]=x)\wedge(P[j]\not ={x}\space\forall j>i)$
 
 ```py
 ComputeR(P, e)
-    R <- array of size |e| initialized with -1
+    R <- array of size |e| initialized with 0
     for i=|P| down to 1
         if R[P[i]]=0
             R[P[i]]<-i
@@ -53,7 +53,7 @@ B-M(P, T)
         if i=0 then
             sol.append(k-|P|+1)
         else if i=|P| then
-            k<-k+1
+            k <- k+1
         else
             badc <- max(1, i-R[T[h]])
             if L[i+1]>0
