@@ -48,24 +48,45 @@ if $P=$`ana` we arrive a node with many leaves, they are the starting position o
 if $P=$`baba` we don't find a path to a leaft, so it's not present
 
 ```mermaid
-flowchart LR;
-ida((" ")) -- $ --> id7(("7"));
-ida((" ")) -- a --> idc(("."));
-ida((" ")) -- na --> idb(("."));
-ida((" ")) -- banana$ --> id1(("1"));
-idb((" ")) -- $ --> id5(("5"));
-idb((" ")) -- na$ --> id3(("3"));
-idc((" ")) -- $ --> id6(("6"));
-idc((" ")) -- na --> idd(("."));
-idd((" ")) -- $ --> id4(("4"));
-idd((" ")) -- na$ --> id2(("2"));
+graph TB
+
+ida(( )) -- $ --> id7((7));
+ida(( )) -- a --> idb(( ));
+ida(( )) -- na --> idc(( ));
+ida(( )) -- banana$ --> id1((1));
+
+idb(( )) -- $ --> id6((6));
+idb(( )) -- na --> idd(( ));
+
+idc(( )) -- na$ --> id3((3));
+idc(( )) -- $ --> id5((5));
+
+idd(( )) -- $ --> id4((4));
+idd(( )) -- na$ --> id2((2));
+
+subgraph subpt [ ]
+id7((7))
+id6((6))
+id4((4))
+id2((2))
+id1((1))
+id5((5))
+id3((3))
+end
+style subpt fill:none, stroke:none;
+
+classDef path fill:#444, stroke:none;
+class ida,idb,idc,idd, path;
+
+classDef pattern fill:#EEF, stroke:#444;
+class id1,id2,id3,id4,id5,id6,id7 pattern;
 ```
 <img>
 
 Pattern matching with $ST$
 
 - Preprocess $T$
-- Builde the $ST$ of $T$
+- Build the $ST$ of $T$
 
 ```py
 ST(T)
