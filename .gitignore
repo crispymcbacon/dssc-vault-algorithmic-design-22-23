@@ -2,4 +2,5 @@
 .DS_Store
 .vscode
 *.o
+__pycache__/
 notes/shared/
