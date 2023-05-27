@@ -2,7 +2,7 @@
 
 ### Heaps
 
-The **(binary) heap** is a data structure represented by an array that resembles a nearly complete binary tree.
+A **heap** is a data structure that represents a nearly complete binary tree containing n keys, each of which must satisfy the following property:
 - Each node in the tree corresponds to an element in the array.
 - The array has two attributes: **length** (number of elements in the array) and **heap-size** (number of elements stored within the heap in the array).
 - The **root** is at index 1, and parent, left child, and right child indices can be easily computed given a node's index:
@@ -32,7 +32,29 @@ The **max-heapify** procedure is used to maintain the max-heap property.\
 
 ?example?
 
+```py
+MaxHeapify(A, i)
+  l = Left(i)
+  r = Right(i)
+  if l <= A.heap_size and A[l] > A[i]
+    largest = l
+  else
+    largest = i
+  if r <= A.heap_size and A[r] > A[largest]
+    largest = r
+  if largest != i
+    exchange A[i] with A[largest]
+    MaxHeapify(A, largest)
+```
+
 #### Building a heap
+
+```py
+BuildMaxHeap(A)
+  A.heap_size = A.length
+  for i = floor(A.length/2) downto 1
+    MaxHeapify(A, i)
+```
 
 
 ### Priority queues
